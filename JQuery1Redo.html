@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style type="text/css">
+* {
+	#area{
+  width: 200px;
+  height: 200px;
+  background-color: #953674;
+}
+
+</style>
+
+<script>
+
+$( document ).ready(function() {
+  $("#area").hover
+  
+  function() {
+    $( this ).css("background-color", "green").text("reset")
+  }
+  ;
+});
+
+
+</script>
+</head>
+<body>
+
+<div id="area" onmouseenter="alertHover();"></div>
+<br><button id="reset" onclick="reset();">Reset</button>	
+
+
+</body>
+</html>
+
